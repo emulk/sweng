@@ -1,0 +1,9 @@
+Glossario:
+Termini					Sinonimi				Descrizione										
+Clienti					Compratore				Cliente che cerca di utilizzare il servizio
+noleggio				Affitto
+auto					Veicolo					Un qualunque autoveicolo dotatto di motore
+agenzie					Concessionaria
+applicazione web		Programma
+Penale					Multa
+Optional				Accessorio extra
