@@ -1,0 +1,35 @@
+Consegna 25 Aprile
+Nome Progetto: RONF (Rental on the fly)
+Scopo Progetto: Realizzare un sistema distribuito per gestire una rete gi agenzie di autonoleggio.
+Descrizione: Il sistema permette ai clienti di noleggiare e riconsegnare auto di diverso tipo e con diverse opzioni,
+e in diverse agenzie, ovvero se io noleggio un auto con detterminate caratteristiche in un determinato centro di noleggio
+mi e permesso di consegnarlo in un altro centro noleggio, che non sia quello di partenza.
+Nei centri di noleggio ci sono auto uguali con caratteristiche diverse, ovvero e possibile che trovo du mini una con
+cinque porte e l'altra con tre porte.
+Il sistema RONF permette di noleggiare auto al momento, ovvero non è possibile prenotare in anticipo.
+Le auto possono essere noleggiate solo a clienti registrati, quindi ogni cliente , se ha intenzione di noleggiare
+un auto deve inanzitutto registrarsi, la registrazione avviene attraverso l'adetto allo sportello
+il quale registra il cliente alla prima richiesta di noleggio, il cliente è identificato da un ID e dai suoi dati
+anagrafici.
+
+
+In cosa consiste la prima parte del progetto?? nel fare i:
+
+Glossario del progetto
+Diagrammi dei casi d'uso
+Diagrammi dinamici
+Specifiche dei casi d'uso
+modello di dominio
+Schede CRC
+Documentazione della progettazione :
+Diagrammi delle classi (Class Diagram)
+Diagrammi di attività
+Diagrammi di interazione (o collaborazione)
+
+
+
+
+
+Diagrama dei casi d'uso:
+a sinistra abbiamo: addetto allo sportello, manutenzione
+a destra abbiamo: l'utente ceh vuole noleggiare un auto

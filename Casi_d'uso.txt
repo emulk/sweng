@@ -1,0 +1,78 @@
+
+
+
+Noleggio:
+
+Nome: Noleggio
+Requisito: Requisito A1
+Obbietivo: Noleggiare un automobile.
+Pre-condizione: Nessuna.
+Successo: 
++ Il cliente decide di noleggiare l'auto
+Fallimento: 
++ La ricerca non va a buon fine.
+Attore primario: Cliente
+Attori secondari: Front office
+Trigger: Il cliente si presenta al front office.
+Flusso principale: 
+1 Il cliente si presenta al front office
+2 Il front office verifica che il cliente si già registrato
+3
+	include::ricerca Si fa la ricerca del auto richiesta dal cliente
+4 L'auto e disponibile in loco
+5 Avviene la registrazione del noleggio
+6 Il noleggio avviene con successo
+Estensioni:
+	2.1 Avviene la registrazione dei dati del cliente
+	2.2 Il Front office richiede i suoi dati anagrafici
+	2.3 Il front office assegna un id al cliente e lo salva nel sistema.
+	
+
+Nome: Ricerca
+Requisito: Requisito A2
+Obbietivo: Ricercare un auto ed eventualmente organizare il trasferimento.
+Pre-condizione: 
+	+ Nessuna
+Successo: L'auto richiesta dal cliente o dal front office viene individuata ed e disponibile.
+Fallimento: 
+	+ L'auto ricercata non e disponibile
+	+ Il cliente decide di interrompere la ricerca
+Attore primario: Front office
+Attore Secondario: Nessuno
+Trigger: 
+	+ Si ricerca l'auto richiesta dal cliente
+	+ Il front office effettua una ricerca autonomamente
+Flusso principale: 
+1 L'addetto al front office inserisce i dati della ricerca
+2 L'addetto consulta i risultati dell ricerca
+3 L'auto e disponibile
+Estensioni:
+	2.1 L'auto non e disponibile in loco
+	2.2 L'addetto richiede l'auto a un'altra agenzia.
+
+Nome: Consegna auto
+Requisito: Requisito A3
+Obbietivo: Consegnare l'auto e fare il pagamento.
+Pre-condizione: 
++ Il noleggio del auto deve essere avventuo con successo.
+Successo: L'auto viene consegnata e il pagamento viene effettuato.
+Fallimento:
+	+ Nessuno
+Attore primario: Cliente
+Attore Secondario: Manutenzione
+Trigger: 
+	+ Il cliente si presenta per consegnare l'auto
+Flusso principale:
+1 Il cliente si presenta alla manutenzione
+2 Si effettua che l'auto abbia il pieno
+3 Il cliente paga.
+Estensione:
+	2.1 Si applica sul prezzo totale la pennale
+
+
+
+
+A1: Il cliente si rivolge al Front office per richedere il noleggio di un auto.
+A2: Il sistema deve poter permettere la ricerca del auto richiesta dal cliente in loco o presso le altre agenzie
+ed eventualmente prevedere il trasferimento del auto.
+A3: L'auto e pronta per il ritiro.
