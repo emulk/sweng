@@ -44,9 +44,9 @@
 \color #008000
 \end_index
 \leftmargin 1cm
-\topmargin 1cm
+\topmargin 2cm
 \rightmargin 1cm
-\bottommargin 1cm
+\bottommargin 2cm
 \headheight 1cm
 \headsep 1cm
 \footskip 1cm
@@ -592,7 +592,7 @@ Diagramma dei casi d'uso completo
 \end_layout
 
 \begin_layout Subsection
-Caso d'uso Noleggio
+Noleggio
 \end_layout
 
 \begin_layout Standard
@@ -667,7 +667,7 @@ Attore primario:
 \series bold
 Attori secondari: 
 \series default
-Front office 
+Front office , Banca
 \end_layout
 
 \begin_layout Itemize
@@ -752,7 +752,7 @@ Estensioni:
 \end_layout
 
 \begin_layout Subsection
-Caso d'uso Ricerca
+Ricerca
 \end_layout
 
 \begin_layout Standard
@@ -811,11 +811,7 @@ Successo
 \series bold
 Fallimento
 \series default
-:
-\end_layout
-
-\begin_layout Itemize
-L'addetto decide di interrompere la ricerca.
+: L'addetto decide di interrompere la ricerca.
 \end_layout
 
 \begin_layout Standard
@@ -837,15 +833,9 @@ e Secondario: Sistema
 \begin_layout Standard
 
 \series bold
-Trigger: 
-\end_layout
-
-\begin_layout Itemize
-Si ricerca l'auto richiesta dal cliente.
-\end_layout
-
-\begin_layout Itemize
-Il front office effettua una ricerca autonomamente.
+Trigger:
+\series default
+ Il front office deve effettuare una ricerca.
 \end_layout
 
 \begin_layout Standard
@@ -1535,7 +1525,7 @@ Il sistema conferma
 \end_layout
 
 \begin_layout Subsection
-Caso d'uso Consegna auto
+Consegna auto
 \end_layout
 
 \begin_layout Standard
@@ -1618,7 +1608,7 @@ Attore Secondario
 \series bold
 Trigger
 \series default
-: + Il cliente si presenta per consegnare l'auto.
+: Il cliente si presenta per consegnare l'auto.
 \end_layout
 
 \begin_layout Standard
@@ -1696,7 +1686,7 @@ Trasferimento auto
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename /home/emulk/Documenti/Didatica/3anno/II_Semestre/ingegneriaDelSoftware/progetto/Progetto12_13/Prima_Parte/diagrammi/RichiestaTrasferimentoActivityNew.png
+	filename C:/home/emulk/Documenti/Didatica/3anno/II_Semestre/ingegneriaDelSoftware/progetto/Progetto12_13/Prima_Parte/diagrammi/RichiestaTrasferimentoActivityNew.png
 	lyxscale 35
 	scale 25
 
