@@ -174,12 +174,32 @@ REQUISITI
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="2">
+<lyxtabular version="3" rows="8" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Descrizione
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -188,11 +208,11 @@ A1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Il sistema deve fornire un servizio distribuito che permetta di noleggiare
+l sistema deve fornire un servizio distribuito che permetta di noleggiare
  un'auto, previa registrazione
 \end_layout
 
@@ -481,7 +501,7 @@ Concessionaria
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Un qualsiasi nodo facente parte della rete Ronf
 \end_layout
 
 \end_inset
@@ -517,7 +537,7 @@ Pena prevista dall'agenzia per non avere riconsegnato l'auto con il pieno
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -526,7 +546,7 @@ Optional
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -535,7 +555,7 @@ Accessorio extra
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -554,6 +574,21 @@ Varianti al modello di serie
 
 \begin_layout Section
 Diagramma dei casi d'uso
+\end_layout
+
+\begin_layout Subsection
+Diagramma dei casi d'uso completo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/emulk/Documenti/Didatica/3anno/II_Semestre/ingegneriaDelSoftware/progetto/Progetto12_13/Prima_Parte/diagrammi/NoleggioActivity (1).png
+	lyxscale 45
+	scale 25
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -607,9 +642,7 @@ L'utente deve essere già registrato.
 
 \series bold
 Successo: 
-\end_layout
-
-\begin_layout Itemize
+\series default
 Il cliente decide di noleggiare l'auto 
 \end_layout
 
@@ -666,11 +699,15 @@ include::ricerca Si fa la ricerca del auto richiesta dal cliente
 \end_layout
 
 \begin_layout Enumerate
-L'auto e disponibile in loco
+L'auto è disponibile in loco
 \end_layout
 
 \begin_layout Enumerate
 Avviene la registrazione del noleggio 
+\end_layout
+
+\begin_layout Enumerate
+Pagamento
 \end_layout
 
 \begin_layout Enumerate
@@ -697,6 +734,14 @@ Estensioni:
 \begin_layout Standard
 2.3 Il front office assegna un id al cliente e lo salva nel sistema.
  
+\end_layout
+
+\begin_layout Standard
+5.1 Il cliente sceglie il tipo di pagamento
+\end_layout
+
+\begin_layout Standard
+5.2 Avvenuto il pagamento viene registrato nel sistema
 \end_layout
 
 \begin_layout Standard
@@ -1124,7 +1169,7 @@ Attore Principale
 \series bold
 Attore Secondario
 \series default
-: Sistema
+: Sistema, Agenzia,Manutenzione
 \end_layout
 
 \begin_layout Standard
@@ -1152,7 +1197,15 @@ Il sistema individua l'auto
 \end_layout
 
 \begin_layout Enumerate
-Organizza il trasferimento del auto
+Risponde alla richiesta in base alla disponibilità che ha 
+\end_layout
+
+\begin_layout Enumerate
+Il sistema riceve la risposta
+\end_layout
+
+\begin_layout Enumerate
+La manutenzione avvia il trasferimento
 \end_layout
 
 \begin_layout Subsection
@@ -1596,21 +1649,6 @@ Estensione
 2.1 Pagamento della penale.
 \end_layout
 
-\begin_layout Subsection
-Diagramma dei casi d'uso completo
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename diagrammi/LucidChart/CasiDUso.png
-	lyxscale 45
-	scale 25
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
@@ -1658,7 +1696,7 @@ Trasferimento auto
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename diagrammi/LucidChart/RichiestaTrasferimentoActivity.png
+	filename /home/emulk/Documenti/Didatica/3anno/II_Semestre/ingegneriaDelSoftware/progetto/Progetto12_13/Prima_Parte/diagrammi/RichiestaTrasferimentoActivityNew.png
 	lyxscale 35
 	scale 25
 
