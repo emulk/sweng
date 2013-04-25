@@ -50,8 +50,8 @@
 \headheight 1cm
 \headsep 1cm
 \footskip 1cm
-\secnumdepth 3
-\tocdepth 3
+\secnumdepth 5
+\tocdepth 5
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
@@ -1686,7 +1686,7 @@ Trasferimento auto
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/home/emulk/Documenti/Didatica/3anno/II_Semestre/ingegneriaDelSoftware/progetto/Progetto12_13/Prima_Parte/diagrammi/RichiestaTrasferimentoActivityNew.png
+	filename /home/emulk/Documenti/Didatica/3anno/II_Semestre/ingegneriaDelSoftware/progetto/Progetto12_13/Prima_Parte/diagrammi/RichiestaTrasferimentoActivityNew.png
 	lyxscale 35
 	scale 25
 

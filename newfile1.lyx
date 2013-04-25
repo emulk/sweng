@@ -1379,7 +1379,7 @@ Fallimento
 \series bold
 Attore Principale
 \series default
-: Front Office
+: Agenzia
 \end_layout
 
 \begin_layout Standard
@@ -1387,7 +1387,7 @@ Attore Principale
 \series bold
 Attore Secondario
 \series default
-: Agenzia
+: Front Office
 \end_layout
 
 \begin_layout Standard
