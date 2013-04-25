@@ -168,46 +168,164 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
 REQUISITI
 \end_layout
 
 \begin_layout Standard
-A1: Il sistema deve fornire un servizio distribuito che permetta di noleggiare
- un auto
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A1
 \end_layout
 
-\begin_layout Standard
-A2: Il sistema deve fornire un servizio per la ricerca di autovetture presenti
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Il sistema deve fornire un servizio distribuito che permetta di noleggiare
+ un'auto, previa registrazione
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Il sistema deve fornire un servizio per la ricerca di autovetture presenti
  in loco oppure presenti in altre concessionarie.
 \end_layout
 
-\begin_layout Standard
-A3: Il sistema deve gestire la registrazione dei vari clienti, con aggiunte
- e controllo delle registrazioni.
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A3
 \end_layout
 
-\begin_layout Standard
-A4: Il sistema deve fornire un servizio distribuito di richiesta di vetture
- presenti in altre agenzie.
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Il sistema deve gestire la registrazione dei vari clienti, con aggiunte
+ e controllo delle registrazioni
 \end_layout
 
-\begin_layout Standard
-A5: Il sistema deve fornire un servizio di richiesta trasferimento di altri
- veicoli presenti in altre sedi.
- 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A4
 \end_layout
 
-\begin_layout Standard
-A6: Il sistema deve gestire i pagamenti
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Il sistema deve fornire un servizio distribuito di richiesta di vetture
+ presenti in altre agenzie
 \end_layout
 
-\begin_layout Standard
-A7: Il sistema deve fornire un servizio di riconsegna della vettura noleggiata
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A5
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Il sistema deve fornire un servizio di richiesta trasferimento di altri
+ veicoli presenti in altre sedi
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Il sistema deve gestire i pagamenti
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Il sistema deve fornire un servizio di riconsegna della vettura noleggiata
+ in una qualsiasi agenzia
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
 \end_inset
 
 
@@ -1476,38 +1594,6 @@ Estensione
 
 \begin_layout Standard
 2.1 Pagamento della penale.
-\end_layout
-
-\begin_layout Subsection
-Requisiti
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-A1
-\series default
-: Il cliente si rivolge al Front office per richiedere il noleggio di un
- auto.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-A2
-\series default
-: Il sistema deve poter permettere la ricerca del auto richiesta dal cliente
- in loco o presso le altre agenzie ed eventualmente prevedere il trasferimento
- del auto.
- 
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-A3
-\series default
-: L'auto e pronta per il ritiro.
 \end_layout
 
 \begin_layout Subsection
