@@ -1602,7 +1602,7 @@ Diagramma dei casi d'uso completo
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename diagrammi/LucidChart/CasiDUso.png
+	filename /home/emulk/Documenti/Didatica/3anno/II_Semestre/ingegneriaDelSoftware/progetto/Progetto12_13/Prima_Parte/diagrammi/NoleggoNewcasi.png
 	lyxscale 45
 	scale 25
 
@@ -1658,7 +1658,7 @@ Trasferimento auto
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename diagrammi/LucidChart/RichiestaTrasferimentoActivity.png
+	filename /home/emulk/Documenti/Didatica/3anno/II_Semestre/ingegneriaDelSoftware/progetto/Progetto12_13/Prima_Parte/diagrammi/RichiestaTrasferimentoActivityNew.png
 	lyxscale 35
 	scale 25
 
