@@ -162,6 +162,44 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+REQUISITI
+\end_layout
+
+\begin_layout Standard
+A1: Il sistema deve fornire un servizio distruibuito che permetta di noleggiare
+ un auto
+\end_layout
+
+\begin_layout Standard
+A2: Il sistema deve fornire un servizio per la ricerca di autovetture presenti
+ in loco oppure presenti in altre concessionarie.
+\end_layout
+
+\begin_layout Standard
+A3: Il sistema deve gestire la registrazione dei vari clienti, con aggiunte
+ e controllo delle registrazioni.
+\end_layout
+
+\begin_layout Standard
+A4: Il sistema deve fornire un servizio distruibuito di richiesta di vetture
+ presenti in altre agenzie.
+\end_layout
+
+\begin_layout Standard
+A5: Il sistema deve fornire un servizio di richiesta trasferimento di altri
+ veicoli presenti in altre sedi.
+ 
+\end_layout
+
+\begin_layout Standard
+A6: Il sistema deve gestire i pagamenti
+\end_layout
+
+\begin_layout Standard
+A7: Il sistema deve fornire un servizio di riconsegna della vettura noleggiata
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -222,7 +260,7 @@ Cliente
 \begin_inset Text
 
 \begin_layout Plain Layout
-Compratore
+Fruitore
 \end_layout
 
 \end_inset
@@ -479,17 +517,15 @@ Successo:
 Il cliente decide di noleggiare l'auto 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \series bold
 Fallimento: 
+\series default
+Ricerca interrotta oppure pagamento interrotto.
 \end_layout
 
 \begin_layout Itemize
-La ricerca non va a buon fine.
-\end_layout
-
-\begin_layout Standard
 
 \series bold
 Attore primario:
@@ -497,7 +533,7 @@ Attore primario:
  Cliente 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \series bold
 Attori secondari: 
@@ -505,7 +541,7 @@ Attori secondari:
 Front office 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \series bold
 Trigger: 
@@ -514,12 +550,13 @@ Il cliente si presenta al front office.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \series bold
 Flusso principale: 
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
 Il cliente si presenta al front office 
 \end_layout
@@ -546,6 +583,7 @@ Il noleggio avviene con successo
  
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 
 \series bold
@@ -636,11 +674,7 @@ Fallimento
 \end_layout
 
 \begin_layout Itemize
-L'auto ricercata non e disponibile.
-\end_layout
-
-\begin_layout Itemize
-Il cliente decide di interrompere la ricerca.
+L'addetto decide di interrompere la ricerca.
 \end_layout
 
 \begin_layout Standard
@@ -690,7 +724,7 @@ L'addetto consulta i risultati della ricerca.
 \end_layout
 
 \begin_layout Enumerate
-L'auto e disponibile.
+L'auto è disponibile.
 \end_layout
 
 \begin_layout Standard
@@ -702,7 +736,7 @@ Estensioni
 \end_layout
 
 \begin_layout Standard
-2.1 L'auto non e disponibile in loco.
+2.1 L'auto non è disponibile in loco.
 \end_layout
 
 \begin_layout Standard
@@ -753,7 +787,7 @@ Obbiettivo
 \series bold
 Pre-condizione
 \series default
-: Il cliente si deve presentare dal addetto del Front Office
+: Nessuna
 \end_layout
 
 \begin_layout Standard
@@ -793,7 +827,7 @@ Attore Secondario
 \series bold
 Trigger
 \series default
-: L'addetto verifica se il cliente e registrato nel sistema
+: Il cliente si presenta al Front Office
 \end_layout
 
 \begin_layout Standard
@@ -805,19 +839,11 @@ Flusso Principale
 \end_layout
 
 \begin_layout Enumerate
-L'addetto effettua se il cliente e registrato
+L'addetto effettua se il cliente è registrato
 \end_layout
 
 \begin_layout Enumerate
 Riceve risposta dal sistema
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Estensioni
-\series default
-: Nessuno 
 \end_layout
 
 \begin_layout Subsection
@@ -847,7 +873,7 @@ Nome
 \series bold
 Requisito
 \series default
-: Requisito A4
+: Requisito A3
 \end_layout
 
 \begin_layout Standard
@@ -879,7 +905,7 @@ Successo
 \series bold
 Fallimento
 \series default
-: Non è possibile effettuare la registrazione
+: Nessuna
 \end_layout
 
 \begin_layout Standard
@@ -903,7 +929,7 @@ Attore Secondario
 \series bold
 Trigger
 \series default
-: L'addetto registra il cliente
+: Il cliente non è registrato
 \end_layout
 
 \begin_layout Standard
@@ -915,7 +941,7 @@ Flusso principale
 \end_layout
 
 \begin_layout Enumerate
-L'addetto chiede i dati anagrafici al Cliente
+L'addetto chiede i dati anagrafici al cliente
 \end_layout
 
 \begin_layout Enumerate
@@ -924,14 +950,6 @@ Inserisce i dati nel sistema
 
 \begin_layout Enumerate
 Assegna un Id al cliente
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Estensioni
-\series default
-: Nessuno
 \end_layout
 
 \begin_layout Subsection
@@ -962,7 +980,7 @@ Nome
 \series bold
 Requisito
 \series default
-: Requisito A5
+: Requisito A4
 \end_layout
 
 \begin_layout Standard
@@ -978,7 +996,7 @@ Obbiettivo
 \series bold
 Pre-condizione
 \series default
-: Nessuno
+: Nessuna
 \end_layout
 
 \begin_layout Standard
@@ -986,7 +1004,7 @@ Pre-condizione
 \series bold
 Successo
 \series default
-: Il trasferimento avviene con successo
+: L'altra agenzia accetta
 \end_layout
 
 \begin_layout Standard
@@ -994,7 +1012,7 @@ Successo
 \series bold
 Fallimento
 \series default
-: Il trasferimento non avviene
+: L'altra agenzia rifiuta il trasferimento
 \end_layout
 
 \begin_layout Standard
@@ -1041,14 +1059,6 @@ Il sistema individua l'auto
 Organizza il trasferimento del auto
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-Estensioni
-\series default
-: Il trasferimento non avviene a causa della non disponibilità del auto
-\end_layout
-
 \begin_layout Subsection
 Gestione flotta
 \end_layout
@@ -1076,7 +1086,7 @@ Nome
 \series bold
 Requisito
 \series default
-: Requisito A6
+: Requisito A5
 \end_layout
 
 \begin_layout Standard
@@ -1092,7 +1102,7 @@ Obbiettivo
 \series bold
 Pre-condizione
 \series default
-: Nessuno
+: Nessuna
 \end_layout
 
 \begin_layout Standard
@@ -1144,7 +1154,15 @@ Flusso principale
 \end_layout
 
 \begin_layout Enumerate
-L'addetto 
+L'addetto compie svariate ricerche
+\end_layout
+
+\begin_layout Enumerate
+Seleziona una autovettura da trasferire presso la propria agenzia
+\end_layout
+
+\begin_layout Enumerate
+Richiede il veicolo all'agenzia di competenza
 \end_layout
 
 \begin_layout Standard
@@ -1182,7 +1200,7 @@ Nome
 \series bold
 Requisito
 \series default
-: Requisito A7
+: Requisito A5
 \end_layout
 
 \begin_layout Standard
@@ -1214,7 +1232,7 @@ Successo
 \series bold
 Fallimento
 \series default
-: L'auto richiesta dal Front Office non e disponibile
+: L'altra agenzia rifiuta il trasferimento
 \end_layout
 
 \begin_layout Standard
@@ -1261,16 +1279,8 @@ L'agenzia risponde
 L'auto viene trasferita 
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-Estensioni
-\series default
-:L'auto non e disponibile
-\end_layout
-
 \begin_layout Subsection
-Ricerca Front Office
+Pagamento
 \end_layout
 
 \begin_layout Standard
@@ -1288,7 +1298,7 @@ Ricerca Front Office
 \series bold
 Nome
 \series default
-:Ricerca
+: Pagamento
 \end_layout
 
 \begin_layout Standard
@@ -1296,7 +1306,7 @@ Nome
 \series bold
 Requisito
 \series default
-: Requisito A8
+: Requisito A6
 \end_layout
 
 \begin_layout Standard
@@ -1304,7 +1314,7 @@ Requisito
 \series bold
 Obbiettivo
 \series default
-: 
+: Gestire vari tipi di pagamento
 \end_layout
 
 \begin_layout Standard
@@ -1312,7 +1322,7 @@ Obbiettivo
 \series bold
 Pre-condizione
 \series default
-: 
+: Nessuna
 \end_layout
 
 \begin_layout Standard
@@ -1320,7 +1330,7 @@ Pre-condizione
 \series bold
 Successo
 \series default
-: 
+: Il pagamento avviene con successo
 \end_layout
 
 \begin_layout Standard
@@ -1328,7 +1338,7 @@ Successo
 \series bold
 Fallimento
 \series default
-: 
+: Il cliente non può pagare con nessun metodo disponibile
 \end_layout
 
 \begin_layout Standard
@@ -1344,7 +1354,7 @@ Attore Principale
 \series bold
 Attore Secondario
 \series default
-: Sistema
+: Cliente, Banca
 \end_layout
 
 \begin_layout Standard
@@ -1352,7 +1362,7 @@ Attore Secondario
 \series bold
 Trigger
 \series default
-: L'addetto registra il cliente
+: Si deve pagare il noleggio oppure la penale
 \end_layout
 
 \begin_layout Standard
@@ -1364,23 +1374,15 @@ Flusso principale
 \end_layout
 
 \begin_layout Enumerate
-L'addetto chiede i dati anagrafici al Cliente
+L'addetto chiede il tipo di pagamento
 \end_layout
 
 \begin_layout Enumerate
-Inserisce i dati nel sistema
+Inserisce i dati nel sistema in base al pagamento
 \end_layout
 
 \begin_layout Enumerate
-Assegna un Id al cliente
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Estensioni
-\series default
-: La registrazione non avviene
+Il sistema conferma
 \end_layout
 
 \begin_layout Subsection
@@ -1410,7 +1412,7 @@ Nome
 \series bold
 Requisito
 \series default
-: Requisito A9
+: Requisito A7
 \end_layout
 
 \begin_layout Standard
@@ -1483,11 +1485,7 @@ Il cliente si presenta alla manutenzione
 \end_layout
 
 \begin_layout Enumerate
-Si effettua che l'auto abbia il pieno 
-\end_layout
-
-\begin_layout Enumerate
-Il cliente paga.
+Si controlla che l'auto abbia il pieno 
 \end_layout
 
 \begin_layout Standard
@@ -1499,7 +1497,7 @@ Estensione
 \end_layout
 
 \begin_layout Standard
-2.1 Si applica sul prezzo totale la penale.
+2.1 Pagamento della penale.
 \end_layout
 
 \begin_layout Subsection
