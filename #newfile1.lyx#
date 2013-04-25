@@ -1379,7 +1379,7 @@ Fallimento
 \series bold
 Attore Principale
 \series default
-: Front Office
+: Agenzia
 \end_layout
 
 \begin_layout Standard
@@ -1387,7 +1387,7 @@ Attore Principale
 \series bold
 Attore Secondario
 \series default
-: Agenzia
+: Front Office
 \end_layout
 
 \begin_layout Standard
@@ -1424,7 +1424,7 @@ Pagamento
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename diagrammi/RicercaFrontOffice.png
+	filename /home/emulk/Documenti/Didatica/3anno/II_Semestre/ingegneriaDelSoftware/progetto/Progetto12_13/Prima_Parte/diagrammi/Pagamento.png
 	scale 70
 
 \end_inset
